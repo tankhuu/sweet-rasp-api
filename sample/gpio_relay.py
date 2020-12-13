@@ -1,0 +1,8 @@
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(32, GPIO.OUT)
+# TURN OFF RELAY
+GPIO.output(32, GPIO.HIGH)
+# TURN ON RELAY
+GPIO.output(32, GPIO.LOW)

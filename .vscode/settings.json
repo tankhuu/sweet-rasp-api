@@ -1,0 +1,21 @@
+{
+  "python.pythonPath": "/Users/tankhuu/opt/anaconda3/envs/python38/bin/python",
+  "editor.tabSize": 2,
+  "workbench.editor.enablePreview": false,
+  "yaml.customTags": [
+    "!FindInMap sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Join sequence",
+    "!Ref",
+    "!Select sequence",
+    "!Split sequence",
+    "!Sub",
+    "!Not sequence",
+    "!Equals sequence",
+    "!Base64"
+  ],
+  "yaml.format.enable": true,
+  "cfnLint.path": "/usr/local/bin/cfn-lint"
+}
