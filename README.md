@@ -10,3 +10,8 @@ Flask app will be started at port 5000
 ## Expose API to public with Ngrok
 
 `/home/pi/opt/ngrok http 5000`
+
+## Usage
+
+When call to https://light-hermes.karrostech.net/alarm
+-> Alarm On in 15 seconds then Turn off itself
