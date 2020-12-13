@@ -1,6 +1,8 @@
 from flask import Flask
-import time
-from AlarmController import AlarmController as AC
+from flask import request
+import json
+# import time
+# from AlarmController import AlarmController as AC
 
 app = Flask(__name__)
 
@@ -8,17 +10,26 @@ app = Flask(__name__)
 def index():
   return 'Welcome to Karros Hermes!'
 
+@app.route('/check', methods=['POST'])
+def check():
+  profile = 'System'
+  data = request.json
+  if(data):
+    profile = data.get('profile')
+  result = {'message': f'{profile} is good with 120 services up!'}
+  return json.dumps(result)
+
 @app.route('/alarm')
 def send_alarm():
   try:
-    alarm = AC(32, 'LOW')
+    # alarm = AC(32, 'LOW')
 
-    # Turn on alarm
-    alarm.on()
-    # Alarm in 15 seconds
-    time.sleep(15)
-    alarm.off()
-    alarm.clean()
+    # # Turn on alarm
+    # alarm.on()
+    # # Alarm in 15 seconds
+    # time.sleep(15)
+    # alarm.off()
+    # alarm.clean()
 
     return 'Send Alarm signal to Light Channel!'
 

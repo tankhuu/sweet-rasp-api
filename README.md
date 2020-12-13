@@ -9,7 +9,12 @@ Flask app will be started at port 5000
 
 ## Expose API to public with Ngrok
 
+In Raspbeery Pi Command line:
 `/home/pi/opt/ngrok http 5000`
+
+In MacOS:
+`cd ~/opt/bin`
+`./ngrok http 5000`
 
 ## Usage
 
