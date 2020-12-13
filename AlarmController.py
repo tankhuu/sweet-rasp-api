@@ -32,3 +32,7 @@ class AlarmController:
     print(f'off relay pin: {self.ALARM_PIN}')
     GPIO.output(self.ALARM_PIN, self.RELAY_OFF)
 
+  def clean(self):
+    print(f'cleanup pin before exit')
+    GPIO.cleanup()
+

@@ -18,6 +18,7 @@ def send_alarm():
     # Alarm in 15 seconds
     time.sleep(15)
     alarm.off()
+    alarm.clean()
 
     return 'Send Alarm signal to Light Channel!'
 
