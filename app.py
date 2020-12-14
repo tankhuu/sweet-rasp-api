@@ -1,8 +1,8 @@
 from flask import Flask
 from flask import request
 import json
-# import time
-# from AlarmController import AlarmController as AC
+import time
+from AlarmController import AlarmController as AC
 
 app = Flask(__name__)
 
@@ -22,14 +22,14 @@ def check():
 @app.route('/alarm')
 def send_alarm():
   try:
-    # alarm = AC(32, 'LOW')
+    alarm = AC(32, 'LOW')
 
-    # # Turn on alarm
-    # alarm.on()
-    # # Alarm in 15 seconds
-    # time.sleep(15)
-    # alarm.off()
-    # alarm.clean()
+    # Turn on alarm
+    alarm.on()
+    # Alarm in 15 seconds
+    time.sleep(15)
+    alarm.off()
+    alarm.clean()
 
     return 'Send Alarm signal to Light Channel!'
 
